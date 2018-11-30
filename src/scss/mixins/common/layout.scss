@@ -1,0 +1,22 @@
+@import '../../variables/colors';
+@import 'animations';
+
+@mixin size($width, $height: $width) {
+	width: $width;
+	height: $height;
+}
+
+@mixin wrap($valueMobile) {
+	&:not(:first-child) {
+		margin-top: $valueMobile;
+	}
+}
+
+@mixin loader($size, $width: 5px, $color: $primary-color) {
+	@include size($size);
+	@include animation-rotation;
+
+	border-radius: $size;
+	border: $width solid;
+	border-color: $primary-color transparent $primary-color transparent;
+}

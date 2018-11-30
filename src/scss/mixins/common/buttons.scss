@@ -1,0 +1,55 @@
+@import '../../variables/colors';
+
+@mixin btn-base {
+	position: relative;
+	background: none;
+	outline: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	text-decoration: none;
+	user-select: none;
+	transition-property: background, color;
+	transition-duration: 0.3s;
+}
+
+@mixin btn-primary {
+	@include btn-base;
+	font-size: 18px;
+	color: #fff;
+	background-color: $primary-color;
+	border: none;
+	border-radius: 4px;
+	padding: 8px;
+	font-weight: 600;
+
+	&:hover {
+		background-color: $primary-color-light;
+	}
+
+	&_active {
+		border: 2px $primary-color solid;
+		background: none;
+		color: $font-color-black;
+		padding: 6px;
+
+		&:hover {
+			background: none;
+		}
+	}
+}
+
+@mixin btn-secondary {
+	@include btn-base;
+	border: 2px $primary-color solid;
+	border-radius: 4px;
+	padding: 4px 8px;
+	font-weight: 600;
+	font-size: 14px;
+
+	&:hover {
+		background-color: $primary-color;
+		color: #fff;
+	}
+}

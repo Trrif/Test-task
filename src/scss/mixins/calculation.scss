@@ -1,0 +1,17 @@
+@import '../variables/colors';
+@import './common/inputs';
+
+@mixin input-calculation {
+	@include input-primary;
+
+	text-align: center;
+	width: 32px;
+	height: 32px;
+}
+
+@mixin divider-calculation {
+	width: 100%;
+	margin: 4px 0;
+	height: 2px;
+	background-color: $primary-color;
+}
