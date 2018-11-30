@@ -2,6 +2,15 @@
 
 [Link to gitHub-pages](https://trrif.github.io/test-task/).
 
+
+In the route file (src/router/routes), components are dynamically imported and initialize vuex modules with the same webpackChunkName.
+
+src/scss/variables contains common variables.
+src/scss/mixins contains mixins common to the section.
+src/scss/mixins/common contains mixins common to the entire application.
+
+src/store/modules contains folders for stores and a mixin file.
+
 ## Project setup
 ```
 npm install
