@@ -2,6 +2,7 @@
 
 [Link to gitHub-pages](https://trrif.github.io/test-task/).
 
+Stack was used: Vue, Vuex, Vue-router
 
 In the route file (src/router/routes), components are dynamically imported and initialize vuex modules with the same webpackChunkName.
 
