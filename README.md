@@ -4,13 +4,15 @@
 
 Stack was used: Vue, Vuex, Vue-router
 
-In the route file (src/router/routes), components are dynamically imported and initialize vuex modules with the same webpackChunkName.
+In the routes file (src/router/routes), components and modules are dynamically importing with the same webpackChunkName.
 
-src/scss/variables contains common variables.
-src/scss/mixins contains mixins common to the section.
-src/scss/mixins/common contains mixins common to the entire application.
+The folder src/scss/variables contains common variables.
 
-src/store/modules contains folders for stores and a mixin file.
+The folder src/scss/mixins contains mixins common to the section.
+
+The folder src/scss/mixins/common contains mixins common to the entire application.
+
+The folder src/store/modules contains folders for modules and a mixin file.
 
 ## Project setup
 ```
