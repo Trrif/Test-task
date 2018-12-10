@@ -105,6 +105,9 @@ export default {
 
   &__brace {
     position: absolute;
+    height: 100%;
+    display: flex;
+    align-items: center;
     cursor: pointer;
     font-size: 40px;
     opacity: 0.3;
